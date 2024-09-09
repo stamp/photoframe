@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Roboto Font-->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+	<!-- Fancybox Gallery CSS -->
+	<link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+	<!-- Material design icon-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="/mdlite/material.indigo-pink.min.css">
+	
+	<script src="/mdlite/material.min.js"></script>
+
+	<link rel="stylesheet" href="/css/frame.css">
+	
+	<title>Slideshow</title>
+</head>
+
+<body>
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout--fixed-header mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--waterfall">
+			<div class="mdl-layout__header-row">
+				<!-- Navigation -->
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="/">PREVIEW</a>
+					<a class="mdl-navigation__link" href="/search">SEARCH</a>
+					<a class="mdl-navigation__link" href="/album">ALBUMS</a>
+				</nav>
+        <div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation">
+					<img src=" <%= avatarUrl %>" id="userAvatar" />
+					 <%= name %>
+					<a class="mdl-navigation__link" href="/logout">Disconnect</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="demo-main mdl-layout__content">
+			<div class="page-content">

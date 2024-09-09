@@ -1,0 +1,29 @@
+<%- include('../partials/head') %>
+
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?qzone=2&size=200x200&data=Example" alt="QR Code" class="qr-code" />
+      <div class="splide__track">
+            <ul class="splide__list">
+            </ul>
+      </div>
+
+      <div class="splide__progress">
+		<div class="splide__progress__bar">
+		</div>
+      </div>
+    </div>
+
+<div class="floating-button">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="startSlideshow">
+        <i class="material-icons">fullscreen</i>
+		<span class="float-btn-label">View in frame</span>
+    </button>
+</div>
+
+<%- include('../partials/dialogs') %>
+
+<%- include('../partials/js') %>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/frame.js"></script>
+
+<%- include('../partials/footer') %>
